@@ -139,9 +139,25 @@ For the CIFAR-10 dataset it can be said that model overfitted and could not achi
 
 
 ## Running the Code
+To run the code simply run the following in the command line for training.
+
 ```
-To run the code simply run train.py but you can adjust train and eval modes with commands.
+python3 train.py
 ```
+
+For evaluating the model run the following line for cifar10.
+
+```
+python3 train.py -- Train False --dataset cifar10
+```
+For evaluating the model run the following line for mniset.
+
+```
+python3 train.py -- Train True --dataset mniset
+```
+
+See the code for spesific arguments as well
+
 
 ## Referances
 
