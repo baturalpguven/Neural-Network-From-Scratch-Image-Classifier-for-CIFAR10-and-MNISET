@@ -24,13 +24,13 @@ This dataset was generated while designing of SET Finder app and has nearly 4000
 ## PCA Analysis
 
 First, let’s start with implementation of PCA, this methos is one of the most common feature reduction methods that preserves the variance of the dataset choosing most relevant features via assessing their eigenvectors as much as possible. Due to this reason, it was an important tool to use in our work. Mathematical model of PCA can be summarized as 
-$Σ=X^T X $
-Σu=λu
-(Σ-λ_m I) u_m=0
+$$Σ=X^T X $$
+$$ Σu=λu $$
+$$ (Σ-λ_m I) u_m=0 $$
 
 
 Where X is data matrix,Σ is covariance matrix,u is eigenvectors and λ is eigenvalues. Subscript i indicates number of eigenvalues that is selected. Finally, x_new is the representation of the dataset on lower dimensions.  To assess how much of the variance in the original dataset is used Proportion of Variance Explained (PVE) equation calculated by diving variance of mth principal component to total variance, which can be mathematically explained as
-PVE(m)=(Σ_(i=1)^n (x_i^T u_m )^2)/(Σ_(j=1)^p Σ_(i=1)^n x_ij^2 )
+$$ PVE(m)=(Σ_(i=1)^n (x_i^T u_m )^2)/(Σ_(j=1)^p Σ_(i=1)^n x_ij^2 ) $$
 For our case PVE showed that
 
 
