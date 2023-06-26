@@ -56,7 +56,7 @@ For CIFAR-10 the number of features from these graph chosen as 250, and for MNIS
 
 Lastly, lets discuss ADAM implementation in the project for utilizing momentum which helps SGD to escape local minima via adding a fraction of previous gradient and RMSProp which solves vanishing gradient problem of the neural networks via taking moving averages of the squared gradients and generalizes better than Stochastic gradient descent (SGD). In other words, ADAM uses the second moment of to update bias terms as well as momentum. The following equation summarizes ADAM.
 
-$$ m_t = \beta_1 m_{t-1} + (1 - \beta_1) \nabla w_t $$
+$$m_t = \beta_1 m_{t-1} + (1 - \beta_1) \nabla w_t$$
 $$ v_t = \beta_2 v_{t-1} + (1 - \beta_2) (\nabla w_t)^2 $$
 $$ \hat{m}_t = \frac{m_t}{1 - \beta_1^t} $$
 $$ \hat{v}_t = \frac{v_t}{1 - \beta_2^t} $$
