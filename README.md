@@ -7,6 +7,8 @@ The first dataset was chosen as CIFAR-10 which has 10 classes, 50000 training, a
 
 ## Architecture of the Proposed Network
 
+This method is popular due to its robustness and efficiency in various problems, including simple image classification like MNIST. However, convolution-based approaches are more popular for image classification as they preserve structural details and meaningful features. The method multiplies features by adjustable weights, applies non-linear activation functions like ReLU and Softmax, and updates weights using gradient computation of a loss function. Lecture notes and [3,4,5,6,7] were used as main sources in implementation. Regularization and PCA analysis were applied to handle complexity due to the fully connected structure's high dimensional features. ADAM optimizer and mini-batch training were implemented to improve performance. Empirical results showed that 2 hidden layers with sizes of 64 and 32, l_2regularization, PCA, 64 batch size, and ADAM optimizer significantly improved the results. The figure illustrates the network's number of hidden layers and layer sizes:
+
 <p align="center">
 <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/867f939d-c190-48f8-946b-a3746748bebb" align = "center" width="50%" height="50%">
 </p>
@@ -21,11 +23,41 @@ This dataset was generated while designing of SET Finder app and has nearly 4000
 </p>
 
 ## PCA Analysis
+
+First, let’s start with implementation of PCA, this methos is one of the most common feature reduction methods that preserves the variance of the dataset choosing most relevant features via assessing their eigenvectors as much as possible. Due to this reason, it was an important tool to use in our work. Mathematical model of PCA can be summarized as 
+Σ=X^T X
+Σu=λu
+(Σ-λ_m I) u_m=0
+
+
+Where X is data matrix,Σ is covariance matrix,u is eigenvectors and λ is eigenvalues. Subscript i indicates number of eigenvalues that is selected. Finally, x_new is the representation of the dataset on lower dimensions.  To assess how much of the variance in the original dataset is used Proportion of Variance Explained (PVE) equation calculated by diving variance of mth principal component to total variance, which can be mathematically explained as
+PVE(m)=(Σ_(i=1)^n (x_i^T u_m )^2)/(Σ_(j=1)^p Σ_(i=1)^n x_ij^2 )
+For our case PVE showed that
+
+
 ![Dataset mniset PVE Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/f9bbf7e0-c4e4-47a1-ba84-553ad330bc2a)
 ![Dataset cifar10 PVE Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/963524b3-80d3-4619-bb0c-10acdfdb058b)
 
 
+For CIFAR-10 the number of features from these graph chosen as 250, and for MNISET 150.
+
+## ADAM
+
+Lastly, lets discuss ADAM implementation in the project for utilizing momentum which helps SGD to escape local minima via adding a fraction of previous gradient and RMSProp which solves vanishing gradient problem of the neural networks via taking moving averages of the squared gradients and generalizes better than Stochastic gradient descent (SGD). In other words, ADAM uses the second moment of to update bias terms as well as momentum. The following equation summarizes ADAM.
+m_t=β_1 m_(t-1)+(1-β_1 )∇w_t
+v_t=β_2 v_(t-1)+(1-β_2 ) (∇w_t )^2
+(m_t ) ̂=m_t/(1-β_1^t ) (v_t ) ̂=v_t/(1-β_2^t )
+w_(t+1)=w_t-η/(√(((v_t ) ̂+ϵ) )  ) (m_t ) ̂
+All these improvements applied to the model to achieve stability, faster convergences with faster time.
+
+
 ## Results
+
+ The proposed method got an accuracy of %67 on MNISET dataset in 2400 epoch, and confusion matrix as well as ROC graphs indicates that Neural network can solve MNISET dataset to a certain extent. Implementing regularization, ADAM and PCA significantly improved model via reducing its complexity and forcing network to get into a better point on bias variance trade off.
+Resultant graph for MNISET can be seen in the following graphs:
+
+
+
 ![Dataset cifar10 Acc Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/008e8db4-9786-4448-99ce-95343462aea8)
 
 ![Dataset cifar10 Confusion Matrix](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/26530b8e-570f-43fe-a1b7-304e2d1782fe)
@@ -36,7 +68,7 @@ This dataset was generated while designing of SET Finder app and has nearly 4000
 ![Dataset cifar10 ROC Curve](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/fd5a3f3b-41ec-4f6c-8e56-aafa96f403bd)
 
 
-![Dataset cifar10 Visual Samples](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/319da9eb-68f9-4373-8552-20bfa3a92747)
+
 
 
 ![Dataset mniset Acc Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/1cecca61-98c9-4c0f-874d-fbd4d08d310c)
@@ -50,8 +82,15 @@ This dataset was generated while designing of SET Finder app and has nearly 4000
 ![Dataset mniset Loss Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/99cba36b-c708-4d05-82a3-f71b327154f2)
 
 
+![Dataset mniset ROC Curve](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/746542d5-49f7-4350-98da-a380c3497b6c)
 
 
+For the CIFAR-10 dataset it can be said that model overfitted and could not achieved higher accuracy higher than %44 accuracy in 2400 epoch. This is due to complex data inside of CIFAR-10 and indicates that PCA, and regularization is not enough to reduce the complexity of the model and select features. Convolutional based approach is necessary and will be implemented in the final report.
+
+## Visual Samples
+
+![Dataset cifar10 Visual Samples](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/319da9eb-68f9-4373-8552-20bfa3a92747)
+![Dataset mniset Visual Samples](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/c379252f-56b3-487f-b0ce-b9ec936763c7)
 
 ## Running the Code
 
@@ -70,8 +109,4 @@ This dataset was generated while designing of SET Finder app and has nearly 4000
 
 
 
-![Dataset mniset ROC Curve](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/746542d5-49f7-4350-98da-a380c3497b6c)
 
-
-
-![Dataset mniset Visual Samples](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/c379252f-56b3-487f-b0ce-b9ec936763c7)
