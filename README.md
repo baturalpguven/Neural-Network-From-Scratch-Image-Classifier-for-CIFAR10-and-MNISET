@@ -87,18 +87,24 @@ Resultant graph for MNISET can be seen in the following graphs:
 
 
 
-![Dataset mniset Acc Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/1cecca61-98c9-4c0f-874d-fbd4d08d310c)
-
-
-
-![Dataset mniset Confusion Matrix](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/83da1f52-6c9c-4530-a909-a9f868ff24df)
-
-
-
-![Dataset mniset Loss Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/99cba36b-c708-4d05-82a3-f71b327154f2)
-
-
-![Dataset mniset ROC Curve](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/746542d5-49f7-4350-98da-a380c3497b6c)
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/1cecca61-98c9-4c0f-874d-fbd4d08d310c" alt="Dataset mniset Acc Graph">
+    </td>
+    <td align="center">
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/83da1f52-6c9c-4530-a909-a9f868ff24df" alt="Dataset mniset Confusion Matrix">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/99cba36b-c708-4d05-82a3-f71b327154f2" alt="Dataset mniset Loss Graph">
+    </td>
+    <td align="center">
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/746542d5-49f7-4350-98da-a380c3497b6c" alt="Dataset mniset ROC Curve">
+    </td>
+  </tr>
+</table>
 
 
 For the CIFAR-10 dataset it can be said that model overfitted and could not achieved higher accuracy higher than %44 accuracy in 2400 epoch. This is due to complex data inside of CIFAR-10 and indicates that PCA, and regularization is not enough to reduce the complexity of the model and select features. Convolutional based approach is necessary and will be implemented in the final report.
