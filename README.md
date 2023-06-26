@@ -20,7 +20,7 @@ This dataset consists of 10 classes which are airplanes, cars, birds, cats, deer
 MNISET Dataset
 This dataset was generated while designing of SET Finder app and has nearly 4000 28×28 greyscale images with 27 different SET card samples. Like CIFAR-10 images converted to grayscale. This dataset is split into 2429 training,607 validation, and 922 test images. Each class has around 110 images with different lighting, and orientation which makes this dataset more complex than the MNIST dataset but not as complex as CIFAR-10.  The distribution of each class, as well as samples for each class, can be seen in the following figure.
 <p align="center">
-<img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/cfc896b9-9ae0-4dd6-b2a6-565359652b3f" align = "center" width="50%" height="50%">
+<img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/cfc896b9-9ae0-4dd6-b2a6-565359652b3f" align = "center">
 </p>
 
 ## PCA Analysis
