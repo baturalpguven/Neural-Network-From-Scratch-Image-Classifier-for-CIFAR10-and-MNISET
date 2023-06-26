@@ -59,11 +59,12 @@ w_(t+1)=w_t-η/(√(((v_t ) ̂+ϵ) )  ) (m_t ) ̂
 All these improvements applied to the model to achieve stability, faster convergences with faster time.
 
 
-## Results
+# Results
 
- The proposed method got an accuracy of %67 on MNISET dataset in 2400 epoch, and confusion matrix as well as ROC graphs indicates that Neural network can solve MNISET dataset to a certain extent. Implementing regularization, ADAM and PCA significantly improved model via reducing its complexity and forcing network to get into a better point on bias variance trade off.
+The proposed method got an accuracy of %67 on MNISET dataset in 2400 epoch, and confusion matrix as well as ROC graphs indicates that Neural network can solve MNISET dataset to a certain extent. Implementing regularization, ADAM and PCA significantly improved model via reducing its complexity and forcing network to get into a better point on bias variance trade off.
 Resultant graph for MNISET can be seen in the following graphs:
 
+## Results CIFAR-10
 
 
 <table>
@@ -85,7 +86,7 @@ Resultant graph for MNISET can be seen in the following graphs:
   </tr>
 </table>
 
-
+## Results MNISET
 
 <table>
   <tr>
