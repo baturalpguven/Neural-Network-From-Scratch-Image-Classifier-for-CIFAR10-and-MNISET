@@ -58,6 +58,7 @@ Lastly, lets discuss ADAM implementation in the project for utilizing momentum w
 
 $$m_t = \beta_1 m_{t-1} + (1 - \beta_1) \nabla w_t$$
 $$v_t = \beta_2 v_{t-1} + (1 - \beta_2) (\nabla w_t)^2$$
+
 $$\hat{m}_t = \frac{m_t}{1 - \beta_1^t}$$
 
 $$\hat{v}_t = \frac{v_t}{1 - \beta_2^t}$$
