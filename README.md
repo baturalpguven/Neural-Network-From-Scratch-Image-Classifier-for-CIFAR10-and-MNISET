@@ -6,7 +6,7 @@ The first dataset was chosen as CIFAR-10 which has 10 classes, 50000 training, a
 
 ## Architecture of the Proposed Network
 
-This method is popular due to its robustness and efficiency in various problems, including simple image classification like MNIST. However, convolution-based approaches are more popular for image classification as they preserve structural details and meaningful features. The method multiplies features by adjustable weights, applies non-linear activation functions like ReLU and Softmax, and updates weights using gradient computation of a loss function. Lecture notes and  were used as main sources in implementation. Regularization and PCA analysis were applied to handle complexity due to the fully connected structure's high dimensional features. ADAM optimizer and mini-batch training were implemented to improve performance. Empirical results showed that 2 hidden layers with sizes of 64 and 32, l_2regularization, PCA, 64 batch size, and ADAM optimizer significantly improved the results. The figure illustrates the network's number of hidden layers and layer sizes:
+This method is popular due to its robustness and efficiency in various problems, including simple image classification like MNIST. However, convolution-based approaches are more popular for image classification as they preserve structural details and meaningful features which is why PCA is applied to improve accuracy. The method multiplies features by adjustable weights applies non-linear activation functions like ReLU and Softmax, and updates weights using gradient computation of a loss function. Regularization and PCA analysis were applied to handle complexity due to the fully connected structure's high dimensional features. ADAM optimizer and mini-batch training were implemented to improve performance. Empirical results showed that 2 hidden layers with sizes of 64 and 32, $l_2$ regularization, PCA, 64 batch size, and ADAM optimizer significantly improved the results. The figure illustrates the network's number of hidden layers and layer sizes:
 
 
 
@@ -17,7 +17,7 @@ This method is popular due to its robustness and efficiency in various problems,
 
 CIFAR-10 Dataset
 This dataset consists of 10 classes which are airplanes, cars, birds, cats, deer, dogs, frogs, horses, ships, and trucks. Each class has 6000 32×32 RGB images; however, they were converted to grayscale using luminosity grayscale conversion in this project to reduce the complexity of the problem. It is split into 40000 training, 1000 validation, and 10000 test images in the project. This dataset is quite complex such that the average human can classify it with %95 accuracy and has been used as a benchmark for many computer vision and machine learning studies. Thus, it will be a challenging dataset to solve with the proposed methods and a good way to assess the robustness of our methods. 
-MNISET Dataset
+<a href="https://github.com/wouterkool/MNISET"> MNISET </a> Dataset
 This dataset was generated while designing of SET Finder app and has nearly 4000 28×28 greyscale images with 27 different SET card samples. Like CIFAR-10 images converted to grayscale. This dataset is split into 2429 training,607 validation, and 922 test images. Each class has around 110 images with different lighting, and orientation which makes this dataset more complex than the MNIST dataset but not as complex as CIFAR-10.  The distribution of each class, as well as samples for each class, can be seen in the following figure.
 <p align="center">
 <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/cfc896b9-9ae0-4dd6-b2a6-565359652b3f" align = "center">
@@ -25,18 +25,18 @@ This dataset was generated while designing of SET Finder app and has nearly 4000
 
 ## PCA Analysis
 
-First, let’s start with implementation of PCA, this methos is one of the most common feature reduction methods that preserves the variance of the dataset choosing most relevant features via assessing their eigenvectors as much as possible. Due to this reason, it was an important tool to use in our work. Mathematical model of PCA can be summarized as 
+First, let’s start with the implementation of PCA, this method is one of the most common feature reduction methods that preserve the variance of the dataset by choosing the most relevant features via assessing their eigenvectors as much as possible. Due to this reason, it was an important tool to use in our work. The mathematical model of PCA can be summarized as 
 $$\Sigma = X^T X$$
 $$\Sigma u = \lambda u$$
 $$(\Sigma - \lambda_m I) u_m = 0$$
 
 
 
-Where X is data matrix,Σ is covariance matrix,u is eigenvectors and λ is eigenvalues. Subscript i indicates number of eigenvalues that is selected. Finally, x_new is the representation of the dataset on lower dimensions.  To assess how much of the variance in the original dataset is used Proportion of Variance Explained (PVE) equation calculated by diving variance of mth principal component to total variance, which can be mathematically explained as
+Where X is the data matrix, Σ is the covariance matrix,u is the eigenvectors and λ is the eigenvalues. The subscript i indicates a number of eigenvalues that are selected. Finally, $x_new$ is the representation of the dataset on lower dimensions.  To assess how much of the variance in the original dataset is used Proportion of Variance Explained (PVE) equation is calculated by diving variance of the mth principal component to the total variance, which can be mathematically explained as
 $$PVE(m) = \frac{\displaystyle\sum_{i=1}^n (x_i^T u_m)^2}{\displaystyle\sum_{j=1}^p \displaystyle\sum_{i=1}^n x_{ij}^2}$$
 
 
-For our case PVE showed that
+In our case, PVE showed that
 
 
 <table>
@@ -52,11 +52,11 @@ For our case PVE showed that
 
 
 
-For CIFAR-10 the number of features from these graph chosen as 250, and for MNISET 150.
+For CIFAR-10 the number of features from this graph chosen was 250, and for <a href="https://github.com/wouterkool/MNISET"> MNISET </a> 150.
 
 ## ADAM
 
-Lastly, lets discuss ADAM implementation in the project for utilizing momentum which helps SGD to escape local minima via adding a fraction of previous gradient and RMSProp which solves vanishing gradient problem of the neural networks via taking moving averages of the squared gradients and generalizes better than Stochastic gradient descent (SGD). In other words, ADAM uses the second moment of to update bias terms as well as momentum. The following equation summarizes ADAM.
+Lastly, let's discuss ADAM implementation in the project for utilizing momentum which helps SGD to escape local minima via adding a fraction of the previous gradient, and RMSProp which solves the vanishing gradient problem of the neural networks via taking moving averages of the squared gradients and generalizes better than Stochastic gradient descent (SGD). In other words, ADAM uses the second moment to update bias terms as well as momentum. The following equation summarizes ADAM.
 
 $$m_t = \beta_1 m_{t-1} + (1 - \beta_1) \nabla w_t$$
 $$v_t = \beta_2 v_{t-1} + (1 - \beta_2) (\nabla w_t)^2$$
@@ -68,13 +68,13 @@ $$\hat{v}_t = \frac{v_t}{1 - \beta_2^t}$$
 $$w_{t+1}= w_t - \frac{\eta}{\sqrt{\hat{v}_t + \epsilon}}\hat{m}_t$$
 
 
-All these improvements applied to the model to achieve stability, faster convergences with faster time.
+All these improvements are applied to the model to achieve stability, and faster convergences in a shorter time.
 
 
 # Results
 
-The proposed method got an accuracy of %67 on MNISET dataset in 2400 epoch, and confusion matrix as well as ROC graphs indicates that Neural network can solve MNISET dataset to a certain extent. Implementing regularization, ADAM and PCA significantly improved model via reducing its complexity and forcing network to get into a better point on bias variance trade off.
-Resultant graph for MNISET can be seen in the following graphs:
+The proposed method got an accuracy of %67 on the <a href="https://github.com/wouterkool/MNISET"> MNISET </a> dataset in 2400 epochs, and the confusion matrix, as well as ROC graphs, indicates that the Neural network can solve the <a href="https://github.com/wouterkool/MNISET"> MNISET </a> dataset to a certain extent. Implementing regularization, ADAM and PCA significantly improved the model by reducing its complexity and forcing the network to get to a better point on bias-variance trade-off.
+Resultant graph for <a href="https://github.com/wouterkool/MNISET"> MNISET </a> can be seen in the following graphs:
 
 ## Results CIFAR-10
 
@@ -100,7 +100,7 @@ Resultant graph for MNISET can be seen in the following graphs:
   </tr>
 </table>
 
-## Results MNISET
+## Results <a href="https://github.com/wouterkool/MNISET"> MNISET </a>
 
 <table>
   <tr>
@@ -150,7 +150,7 @@ For evaluating the model run the following line for cifar10.
 ```
 python3 train.py -- Train False --dataset cifar10
 ```
-For evaluating the model run the following line for mniset.
+For evaluating the model run the following line for <a href="https://github.com/wouterkool/MNISET"> MNISET </a>.
 
 ```
 python3 train.py -- Train True --dataset mniset
