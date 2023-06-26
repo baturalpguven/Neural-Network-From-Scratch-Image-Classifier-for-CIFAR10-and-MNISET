@@ -1,7 +1,6 @@
 # Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET
 
 
-
 The focus of this project is to tackle image classification problems using a simple fully connected neural network on two different datasets and compare the performance of each method using a confusion matrix, accuracy results, and Receiver Operation Characteristic (ROC).
 The first dataset was chosen as CIFAR-10 which has 10 classes, 50000 training, and 10000 test images. The second dataset was chosen as <a href="https://github.com/wouterkool/MNISET"> MNISET </a> which has around 3000 training and 1000 test images with 27 different SET card classes. 
 
@@ -35,8 +34,17 @@ PVE(m)=(Σ_(i=1)^n (x_i^T u_m )^2)/(Σ_(j=1)^p Σ_(i=1)^n x_ij^2 )
 For our case PVE showed that
 
 
-![Dataset mniset PVE Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/f9bbf7e0-c4e4-47a1-ba84-553ad330bc2a)
-![Dataset cifar10 PVE Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/963524b3-80d3-4619-bb0c-10acdfdb058b)
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/f9bbf7e0-c4e4-47a1-ba84-553ad330bc2a" alt="Dataset mniset PVE Graph">
+    </td>
+    <td align="center">
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/963524b3-80d3-4619-bb0c-10acdfdb058b" alt="Dataset cifar10 PVE Graph">
+    </td>
+  </tr>
+</table>
+
 
 
 For CIFAR-10 the number of features from these graph chosen as 250, and for MNISET 150.
@@ -93,6 +101,7 @@ For the CIFAR-10 dataset it can be said that model overfitted and could not achi
 ![Dataset mniset Visual Samples](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/c379252f-56b3-487f-b0ce-b9ec936763c7)
 
 ## Running the Code
+To run the code simply run train.py but you can adjust train and eval modes with commands.
 
 ## Referances
 
