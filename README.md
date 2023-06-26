@@ -156,7 +156,32 @@ For evaluating the model run the following line for mniset.
 python3 train.py -- Train True --dataset mniset
 ```
 
-See the code for spesific arguments as well
+
+Replace `train.py` with the name of your script or executable. The `--dataset`, `--save_freq`,`--PCA`, `--PVE`, ` load_epoch ` and `--train` are example command-line arguments that you can customize based on your specific use case.
+
+Command Line Arguments:
+
+--dataset <str> (default: 'mniset')
+    Name of the dataset to be used for training and evaluation.
+
+--save_freq <int> (default: 200)
+    Frequency of saving checkpoints during training.
+
+--train <str> (default: 'true')
+    Flag to indicate whether to start the training process. Set to 'true' to initiate training.
+
+--PCA <str> (default: 'custom')
+    Implementation of PCA for feature reduction. Choose from available options: 'custom', 'sklearn', 'pca_toolkit'.
+
+--PVE <str> (default: 'false')
+    Flag to calculate the Proportion of Variance Explained (PVE). Set to 'true' to enable PVE calculation.
+
+--load_epoch <str> (default: '2400')
+    Specify the epoch number to load a pre-trained model checkpoint for further training or evaluation.
+
+
+Feel free to modify the example command and arguments to match the specific command line interface of your project.
+
 
 
 ## Referances
