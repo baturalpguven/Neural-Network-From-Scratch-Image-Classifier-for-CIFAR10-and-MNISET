@@ -20,18 +20,17 @@ This dataset was generated while designing of SET Finder app and has nearly 4000
 <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/2516feb5-6280-409e-a3bf-81ae3610ee4a" align = "center" >
 </p>
 
+## PCA Analysis
+![Dataset mniset PVE Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/f9bbf7e0-c4e4-47a1-ba84-553ad330bc2a)
+![Dataset cifar10 PVE Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/963524b3-80d3-4619-bb0c-10acdfdb058b)
 
 
-
+## Results
 ![Dataset cifar10 Acc Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/008e8db4-9786-4448-99ce-95343462aea8)
 
 ![Dataset cifar10 Confusion Matrix](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/26530b8e-570f-43fe-a1b7-304e2d1782fe)
 
 ![Dataset cifar10 Loss Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/86defc23-4db8-4584-be83-62ab30ce4581)
-
-
-![Dataset cifar10 PVE Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/963524b3-80d3-4619-bb0c-10acdfdb058b)
-
 
 
 ![Dataset cifar10 ROC Curve](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/fd5a3f3b-41ec-4f6c-8e56-aafa96f403bd)
@@ -52,7 +51,22 @@ This dataset was generated while designing of SET Finder app and has nearly 4000
 
 
 
-![Dataset mniset PVE Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/f9bbf7e0-c4e4-47a1-ba84-553ad330bc2a)
+
+
+## Running the Code
+
+## Referances
+
+1. <a href="https://nthu-datalab.github.io/ml/index.html"> CS565600 Deep Learning, National Tsing Hua University </a>
+2. <a href="https://jonathanweisberg.org/post/A%20Neural%20Network%20from%20Scratch%20-%20Part%201/"> Building a Neural Network from Scratch: Part 1 </a>
+3. <a href="https://jonathanweisberg.org/post/A%20Neural%20Network%20from%20Scratch%20-%20Part%202/"> Building a Neural Network from Scratch: Part 2 </a>
+4. <a href="https://developer.ibm.com/technologies/artificial-intelligence/articles/neural-networks-from-scratch/"> Neural networks from scratch, IBM Developer</a>
+5. <a href="https://aimatters.wordpress.com/2019/06/17/the-softmax-function-derivative/"> The Softmax Function Derivative (Part 1) </a>
+6. <a href="https://github.com/lionelmessi6410/Neural-Networks-from-Scratch"> Neural-Networks-from-Scratch </a>
+
+
+
+
 
 
 
