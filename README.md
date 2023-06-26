@@ -24,7 +24,7 @@ This dataset was generated while designing of SET Finder app and has nearly 4000
 ## PCA Analysis
 
 First, let’s start with implementation of PCA, this methos is one of the most common feature reduction methods that preserves the variance of the dataset choosing most relevant features via assessing their eigenvectors as much as possible. Due to this reason, it was an important tool to use in our work. Mathematical model of PCA can be summarized as 
-Σ=X^T X
+$Σ=X^T X $
 Σu=λu
 (Σ-λ_m I) u_m=0
 
