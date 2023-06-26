@@ -60,7 +60,7 @@ $$m_t = \beta_1 m_{t-1} + (1 - \beta_1) \nabla w_t$$
 $$v_t = \beta_2 v_{t-1} + (1 - \beta_2) (\nabla w_t)^2$$
 $$\hat{m}_t = \frac{m_t}{1 - \beta_1^t}$$
 $$\hat{v}_t = \frac{v_t}{1 - \beta_2^t}$$
-$$w_{t+1} = w_t - \frac{\eta}{\sqrt{\hat{v}_t + \epsilon}} \hat{m}_t$$
+$$w_{t+1} = w_t - \frac{\eta}{\sqrt{\hat{v}_t + \epsilon}}\hat{m}_t$$
 
 
 All these improvements applied to the model to achieve stability, faster convergences with faster time.
