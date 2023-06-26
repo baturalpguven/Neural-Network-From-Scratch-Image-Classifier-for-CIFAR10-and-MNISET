@@ -42,10 +42,10 @@ For our case PVE showed that
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/f9bbf7e0-c4e4-47a1-ba84-553ad330bc2a" alt="Dataset mniset PVE Graph">
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/5ee273a0-d654-4636-ae9a-9ec108b22448" alt="Dataset mniset PVE Graph">
     </td>
     <td align="center">
-      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/963524b3-80d3-4619-bb0c-10acdfdb058b" alt="Dataset cifar10 PVE Graph">
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/b99610ac-8869-4ddd-b7e9-3ad87e439d8d" alt="Dataset cifar10 PVE Graph">
     </td>
   </tr>
 </table>
@@ -78,35 +78,24 @@ Resultant graph for MNISET can be seen in the following graphs:
 
 ## Results CIFAR-10
 
-![Dataset cifar10 Acc Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/16e0162d-3f19-4bbd-8f77-2f92d65fbf8d)
-![Dataset cifar10 Confusion Matrix](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/efc7aaec-37c5-4f77-bd48-63e58a3b592b)
-![Dataset cifar10 Loss Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/876cae20-b6d5-421c-8ad2-a61bb479e782)
-![Dataset cifar10 PVE Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/5ee273a0-d654-4636-ae9a-9ec108b22448)
-![Dataset cifar10 ROC Curve](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/c27d648f-418e-4ab5-99b4-192fa22ac22f)
-![Dataset cifar10 Visual Samples](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/fcecec27-fb92-4fe8-9e6c-c54e8c8705a5)
-![Dataset mniset Acc Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/4134a8f4-d364-46bd-bf70-86b105d1a87c)
-![Dataset mniset Confusion Matrix](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/020b289d-7b7c-43aa-8ad7-6fc071ad3f57)
-![Dataset mniset Loss Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/7a445cff-a9a7-452f-88be-c89230c3392e)
-![Dataset mniset PVE Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/b99610ac-8869-4ddd-b7e9-3ad87e439d8d)
-![Dataset mniset ROC Curve](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/c3fb9284-6a92-4ec1-92eb-b70298af7b05)
-![Dataset mniset Visual Samples](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/87c1222f-2c38-432c-85fc-601589ed03b6)
+
 
 
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/008e8db4-9786-4448-99ce-95343462aea8" alt="Dataset cifar10 Acc Graph">
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/16e0162d-3f19-4bbd-8f77-2f92d65fbf8d" alt="Dataset cifar10 Acc Graph">
     </td>
     <td align="center">
-      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/26530b8e-570f-43fe-a1b7-304e2d1782fe" alt="Dataset cifar10 Confusion Matrix">
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/efc7aaec-37c5-4f77-bd48-63e58a3b592b" alt="Dataset cifar10 Confusion Matrix">
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/86defc23-4db8-4584-be83-62ab30ce4581" alt="Dataset cifar10 Loss Graph">
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/876cae20-b6d5-421c-8ad2-a61bb479e782" alt="Dataset cifar10 Loss Graph">
     </td>
     <td align="center">
-      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/fd5a3f3b-41ec-4f6c-8e56-aafa96f403bd" alt="Dataset cifar10 ROC Curve">
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/c27d648f-418e-4ab5-99b4-192fa22ac22f" alt="Dataset cifar10 ROC Curve">
     </td>
   </tr>
 </table>
@@ -116,18 +105,18 @@ Resultant graph for MNISET can be seen in the following graphs:
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/1cecca61-98c9-4c0f-874d-fbd4d08d310c" alt="Dataset mniset Acc Graph">
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/4134a8f4-d364-46bd-bf70-86b105d1a87c" alt="Dataset mniset Acc Graph">
     </td>
     <td align="center">
-      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/83da1f52-6c9c-4530-a909-a9f868ff24df" alt="Dataset mniset Confusion Matrix">
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/020b289d-7b7c-43aa-8ad7-6fc071ad3f57" alt="Dataset mniset Confusion Matrix">
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/99cba36b-c708-4d05-82a3-f71b327154f2" alt="Dataset mniset Loss Graph">
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/7a445cff-a9a7-452f-88be-c89230c3392e" alt="Dataset mniset Loss Graph">
     </td>
     <td align="center">
-      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/746542d5-49f7-4350-98da-a380c3497b6c" alt="Dataset mniset ROC Curve">
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/c3fb9284-6a92-4ec1-92eb-b70298af7b05" alt="Dataset mniset ROC Curve">
     </td>
   </tr>
 </table>
@@ -140,10 +129,10 @@ For the CIFAR-10 dataset it can be said that model overfitted and could not achi
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/319da9eb-68f9-4373-8552-20bfa3a92747" alt="Dataset cifar10 Visual Samples" >
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/fcecec27-fb92-4fe8-9e6c-c54e8c8705a5" alt="Dataset cifar10 Visual Samples" >
     </td>
     <td align="center">
-      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/c379252f-56b3-487f-b0ce-b9ec936763c7" alt="Dataset mniset Visual Samples" >
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/87c1222f-2c38-432c-85fc-601589ed03b6" alt="Dataset mniset Visual Samples" >
     </td>
   </tr>
 </table>
