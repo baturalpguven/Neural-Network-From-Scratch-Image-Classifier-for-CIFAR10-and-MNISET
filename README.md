@@ -115,10 +115,10 @@ For the CIFAR-10 dataset it can be said that model overfitted and could not achi
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/319da9eb-68f9-4373-8552-20bfa3a92747" alt="Dataset cifar10 Visual Samples" width="400" />
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/319da9eb-68f9-4373-8552-20bfa3a92747" alt="Dataset cifar10 Visual Samples" >
     </td>
     <td align="center">
-      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/c379252f-56b3-487f-b0ce-b9ec936763c7" alt="Dataset mniset Visual Samples" width="400" />
+      <img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/c379252f-56b3-487f-b0ce-b9ec936763c7" alt="Dataset mniset Visual Samples" >
     </td>
   </tr>
 </table>
