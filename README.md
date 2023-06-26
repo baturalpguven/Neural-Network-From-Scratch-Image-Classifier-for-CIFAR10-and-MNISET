@@ -8,8 +8,10 @@ The first dataset was chosen as CIFAR-10 which has 10 classes, 50000 training, a
 
 This method is popular due to its robustness and efficiency in various problems, including simple image classification like MNIST. However, convolution-based approaches are more popular for image classification as they preserve structural details and meaningful features. The method multiplies features by adjustable weights, applies non-linear activation functions like ReLU and Softmax, and updates weights using gradient computation of a loss function. Lecture notes and [3,4,5,6,7] were used as main sources in implementation. Regularization and PCA analysis were applied to handle complexity due to the fully connected structure's high dimensional features. ADAM optimizer and mini-batch training were implemented to improve performance. Empirical results showed that 2 hidden layers with sizes of 64 and 32, l_2regularization, PCA, 64 batch size, and ADAM optimizer significantly improved the results. The figure illustrates the network's number of hidden layers and layer sizes:
 
+
+
 <p align="center">
-<img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/867f939d-c190-48f8-946b-a3746748bebb" align = "center" width="50%" height="50%">
+<img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/b02c5cb1-d3ff-4ccd-a017-d6c6f414cd17" align = "center" width="50%" height="50%">
 </p>
 
 
@@ -18,7 +20,7 @@ This dataset consists of 10 classes which are airplanes, cars, birds, cats, deer
 MNISET Dataset
 This dataset was generated while designing of SET Finder app and has nearly 4000 28×28 greyscale images with 27 different SET card samples. Like CIFAR-10 images converted to grayscale. This dataset is split into 2429 training,607 validation, and 922 test images. Each class has around 110 images with different lighting, and orientation which makes this dataset more complex than the MNIST dataset but not as complex as CIFAR-10.  The distribution of each class, as well as samples for each class, can be seen in the following figure.
 <p align="center">
-<img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/2516feb5-6280-409e-a3bf-81ae3610ee4a" align = "center" >
+<img src="https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/cfc896b9-9ae0-4dd6-b2a6-565359652b3f" align = "center" width="50%" height="50%">
 </p>
 
 ## PCA Analysis
@@ -75,6 +77,19 @@ The proposed method got an accuracy of %67 on MNISET dataset in 2400 epoch, and 
 Resultant graph for MNISET can be seen in the following graphs:
 
 ## Results CIFAR-10
+
+![Dataset cifar10 Acc Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/16e0162d-3f19-4bbd-8f77-2f92d65fbf8d)
+![Dataset cifar10 Confusion Matrix](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/efc7aaec-37c5-4f77-bd48-63e58a3b592b)
+![Dataset cifar10 Loss Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/876cae20-b6d5-421c-8ad2-a61bb479e782)
+![Dataset cifar10 PVE Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/5ee273a0-d654-4636-ae9a-9ec108b22448)
+![Dataset cifar10 ROC Curve](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/c27d648f-418e-4ab5-99b4-192fa22ac22f)
+![Dataset cifar10 Visual Samples](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/fcecec27-fb92-4fe8-9e6c-c54e8c8705a5)
+![Dataset mniset Acc Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/4134a8f4-d364-46bd-bf70-86b105d1a87c)
+![Dataset mniset Confusion Matrix](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/020b289d-7b7c-43aa-8ad7-6fc071ad3f57)
+![Dataset mniset Loss Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/7a445cff-a9a7-452f-88be-c89230c3392e)
+![Dataset mniset PVE Graph](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/b99610ac-8869-4ddd-b7e9-3ad87e439d8d)
+![Dataset mniset ROC Curve](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/c3fb9284-6a92-4ec1-92eb-b70298af7b05)
+![Dataset mniset Visual Samples](https://github.com/baturalpguven/Neural-Network-From-Scratch-Image-Classifier-for-CIFAR10-and-MNISET/assets/77858949/87c1222f-2c38-432c-85fc-601589ed03b6)
 
 
 <table>
