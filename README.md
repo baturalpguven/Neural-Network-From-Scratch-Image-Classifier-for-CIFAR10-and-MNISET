@@ -31,7 +31,7 @@ $$(\Sigma - \lambda_m I) u_m = 0$$
 
 
 Where X is data matrix,Σ is covariance matrix,u is eigenvectors and λ is eigenvalues. Subscript i indicates number of eigenvalues that is selected. Finally, x_new is the representation of the dataset on lower dimensions.  To assess how much of the variance in the original dataset is used Proportion of Variance Explained (PVE) equation calculated by diving variance of mth principal component to total variance, which can be mathematically explained as
-$$PVE(m) = \frac{\sum_{i=1}^n (x_i^T u_m)^2}{\sum_{j=1}^p \sum_{i=1}^n x_{ij}^2}$$
+$$PVE(m) = \frac{\displaystyle\sum_{i=1}^n (x_i^T u_m)^2}{\displaystyle\sum_{j=1}^p \displaystyle\sum_{i=1}^n x_{ij}^2}$$
 
 
 For our case PVE showed that
